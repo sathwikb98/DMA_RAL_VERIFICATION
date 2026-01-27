@@ -1,3 +1,3 @@
 # DMA_RAL_VERIFICATION
-<img width="1118" height="471" alt="DMA_RAL_ARCHITECTURE drawio" src="https://github.com/user-attachments/assets/aa185e85-dc5f-486d-8508-858f14b26394" />
+<img width="1164" height="522" alt="DMA_RAL_ARCHITECTURE drawio" src="https://github.com/user-attachments/assets/e68f3893-6a41-4ee5-8468-29a088cf34c5" />
 DMA registers are verified here with UVM_RAL model
