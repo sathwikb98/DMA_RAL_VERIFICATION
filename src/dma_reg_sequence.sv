@@ -180,6 +180,33 @@ class ioa_01_rw_seq extends dma_reg_base_seq;
     else
       `uvm_error("REPORT_ERROR", "[IO_ADDR_REG] DOES'NT MATCH write and read value!")
 
+    // ---------------------------------------------------------------------
+    //  WRITE & READ......[TEST]
+    // ---------------------------------------------------------------------
+    assert(rm.io_addr_reg_h.io_addr.randomize()); // random value generated...
+    rm.io_addr_reg_h.write(status, rm.io_addr_reg_h.io_addr.value, UVM_FRONTDOOR);
+    dis = rm.io_addr_reg_h.get();
+    mir = rm.io_addr_reg_h.get_mirrored_value();
+
+    `uvm_info("REG_SEQ:[WRITE]",
+              $sformatf("[IO_ADDR_01] [BACKDOOR-WRITE] Desired=0x%08h, Mirror=0x%08h [status : %0s]",
+              dis, mir, status.name()),
+              UVM_LOW)
+
+    rm.io_addr_reg_h.read(status, rdata, UVM_FRONTDOOR);
+    dis = rm.io_addr_reg_h.get();
+    mir = rm.io_addr_reg_h.get_mirrored_value();
+    `uvm_info("REG_SEQ:[READ]",
+              $sformatf("[IO_ADDR_01] [BACKDOOR-READ] Desired=0x%08h, Mirror=0x%08h, rdata=0x%08h [status : %0s]",
+              dis, mir, rdata, status.name()),
+              UVM_LOW)
+
+    if(rdata == rm.io_addr_reg_h.io_addr.value)
+      `uvm_info("REPORT", "[IO_ADDR_REG] MATCH's write and read value...", UVM_MEDIUM)
+    else
+      `uvm_error("REPORT_ERROR", "[IO_ADDR_REG] DOES'NT MATCH write and read value!")
+    
+
   endtask
 endclass
 
@@ -203,6 +230,31 @@ class mem_01_rw_seq extends dma_reg_base_seq;
               UVM_LOW)
 
     rm.mem_addr_reg_h.peek(status, rdata);
+    dis = rm.mem_addr_reg_h.get();
+    mir = rm.mem_addr_reg_h.get_mirrored_value();
+    `uvm_info("REG_SEQ:[READ]",
+              $sformatf("[MEM_ADDR_01]...[PEEK]... Desired=0x%08h, Mirror=0x%08h, rdata=0x%08h [status : %0s]",
+              dis, mir, rdata, status.name()),
+              UVM_LOW)
+
+    if(rdata == rm.mem_addr_reg_h.mem_addr.value)
+      `uvm_info("REPORT", "[MEM_ADDR_REG] MATCH's write and read value...", UVM_MEDIUM)
+    else
+      `uvm_error("REPORT_ERROR", "[MEM_ADDR_REG] DOES'NT MATCH write and read value!")
+
+    // ------------------------------------------------------
+    // write & read............[TEST]
+    // ------------------------------------------------------
+    assert(rm.mem_addr_reg_h.mem_addr.randomize()); // random value generated...
+    rm.mem_addr_reg_h.write(status, rm.mem_addr_reg_h.mem_addr.value, UVM_FRONTDOOR);
+    dis = rm.mem_addr_reg_h.get();
+    mir = rm.mem_addr_reg_h.get_mirrored_value();
+    `uvm_info("REG_SEQ:[WRITE]",
+              $sformatf("[MEM_ADDR_01]...[POKE]... Desired=0x%08h, Mirror=0x%08h [status : %0s]",
+              dis, mir, status.name()),
+              UVM_LOW)
+
+    rm.mem_addr_reg_h.read(status, rdata, UVM_FRONTDOOR);
     dis = rm.mem_addr_reg_h.get();
     mir = rm.mem_addr_reg_h.get_mirrored_value();
     `uvm_info("REG_SEQ:[READ]",
@@ -241,7 +293,8 @@ class status_01_busy_seq extends dma_reg_base_seq;
       [31:16] Reserved...[16bits]
       ......[MSB]
       */
-      rm.cntrl_reg_h.write(status, 32'd0);
+      rm.cntrl_reg_h.write(status, 32'd0, UVM_BACKDOOR);
+      //rm.status_reg_h.poke(status, 32'd0);
       rm.transfer_count_reg_h.poke(status, 32'd0);
       
       rm.status_reg_h.poke(status, 32'h000_00_0_1);
@@ -271,10 +324,10 @@ class status_01_busy_seq extends dma_reg_base_seq;
                 dis, mir, rdata,  status.name()),
                 UVM_LOW)
 
-      if(rdata == 32'h0)
-        `uvm_info("REPORT", "[STATUS_REG] MATCH's read value as Zero.....", UVM_MEDIUM)
+      if(rdata != 32'h0000_AB_C_D)
+        `uvm_info("REPORT", "[STATUS_REG] MATCH's write & read value as not same [RO].....", UVM_MEDIUM)
       else
-        `uvm_error("REPORT_ERROR", "[STATUS_REG] DOES'NT MATCH read value as Zero...!")
+        `uvm_error("REPORT_ERROR", "[STATUS_REG] DOES'NT MATCH write & read value as not same [RO]...!")
 
     `uvm_info("REG_SEQ",
       "STATUS_01 : verification completed",

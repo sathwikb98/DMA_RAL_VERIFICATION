@@ -1,0 +1,2364 @@
+var g_data = {
+b7:[{dummy:0},
+{anchor:'cvg117',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'118',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'118',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'        else if (wr_en) begin',f:'dma_design.sv',l:'140',h:'24',c:'g'}
+,{cr:'c',t:'E',z:'        else begin',f:'dma_design.sv',l:'187',h:'18',c:'g'}
+]},
+{anchor:'cvg118',items:[{z:'            case (addr)',f:'dma_design.sv',l:'141',c:'Y',p:'88.88'}
+,{cr:'c',t:'T',z:'                INTR_ADDR: begin',f:'dma_design.sv',l:'142',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                CTRL_ADDR: begin',f:'dma_design.sv',l:'146',h:'4',c:'g'}
+,{cr:'c',t:'T',z:'                IO_ADDR_ADDR: begin',f:'dma_design.sv',l:'152',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                MEM_ADDR_ADDR: begin',f:'dma_design.sv',l:'156',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                EXTRA_INFO_ADDR: begin',f:'dma_design.sv',l:'160',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                DESCRIPTOR_ADDR: begin',f:'dma_design.sv',l:'164',h:'2',c:'g'}
+,{cr:'m',t:'T',z:'                ERROR_STATUS_ADDR: begin',f:'dma_design.sv',l:'168',h:'0',c:'r'}
+,{cr:'c',t:'T',z:'                CONFIG_ADDR: begin',f:'dma_design.sv',l:'177',h:'8',c:'g'}
+,{cr:'c',t:'A',z:'            case (addr)',f:'dma_design.sv',l:'141',h:'2',c:'g'}
+]},
+{anchor:'cvg119',items:[{z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',h:'0',c:'r'}
+]},
+{anchor:'cvg120',items:[{z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',h:'0',c:'r'}
+]},
+{anchor:'cvg121',items:[{z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',h:'0',c:'r'}
+]},
+{anchor:'cvg122',items:[{z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',h:'0',c:'r'}
+]},
+{anchor:'cvg123',items:[{z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',h:'0',c:'r'}
+]},
+{anchor:'cvg124',items:[{z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',h:'17',c:'g'}
+]},
+{anchor:'cvg125',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'        else if (rd_en) begin',f:'dma_design.sv',l:'201',h:'31',c:'g'}
+,{cr:'c',t:'A',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',h:'27',c:'g'}
+]},
+{anchor:'cvg126',items:[{z:'            case (addr)',f:'dma_design.sv',l:'202',c:'G',p:'90.90'}
+,{cr:'c',t:'T',z:'                INTR_ADDR: begin',f:'dma_design.sv',l:'203',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'                CTRL_ADDR: begin',f:'dma_design.sv',l:'207',h:'5',c:'g'}
+,{cr:'c',t:'T',z:'                IO_ADDR_ADDR: begin',f:'dma_design.sv',l:'211',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                MEM_ADDR_ADDR: begin',f:'dma_design.sv',l:'215',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                EXTRA_INFO_ADDR: begin',f:'dma_design.sv',l:'219',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                STATUS_ADDR: begin',f:'dma_design.sv',l:'223',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                TRANSFER_COUNT_ADDR: begin',f:'dma_design.sv',l:'228',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                DESCRIPTOR_ADDR: begin',f:'dma_design.sv',l:'232',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                ERROR_STATUS_ADDR: begin',f:'dma_design.sv',l:'236',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'                CONFIG_ADDR: begin',f:'dma_design.sv',l:'242',h:'8',c:'g'}
+,{cr:'m',t:'T',z:'                default: begin',f:'dma_design.sv',l:'248',h:'0',c:'r'}
+]},
+{anchor:'cvg127',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'259',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'259',h:'2',c:'g'}
+,{cr:'c',t:'E',z:'        else begin',f:'dma_design.sv',l:'271',h:'13',c:'g'}
+]},
+{anchor:'cvg128',items:[{z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'            else if (status_busy) begin',f:'dma_design.sv',l:'279',h:'6',c:'g'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',h:'5',c:'g'}
+]},
+{anchor:'cvg129',items:[{z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',h:'4',c:'g'}
+]},
+{anchor:'cvg130',items:[{z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',h:'13',c:'g'}
+]}],
+b116:[{dummy:0},
+{anchor:'cvg117',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'118',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'118',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'        else if (wr_en) begin',f:'dma_design.sv',l:'140',h:'24',c:'g'}
+,{cr:'c',t:'E',z:'        else begin',f:'dma_design.sv',l:'187',h:'18',c:'g'}
+]},
+{anchor:'cvg118',items:[{z:'            case (addr)',f:'dma_design.sv',l:'141',c:'Y',p:'88.88'}
+,{cr:'c',t:'T',z:'                INTR_ADDR: begin',f:'dma_design.sv',l:'142',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                CTRL_ADDR: begin',f:'dma_design.sv',l:'146',h:'4',c:'g'}
+,{cr:'c',t:'T',z:'                IO_ADDR_ADDR: begin',f:'dma_design.sv',l:'152',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                MEM_ADDR_ADDR: begin',f:'dma_design.sv',l:'156',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                EXTRA_INFO_ADDR: begin',f:'dma_design.sv',l:'160',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                DESCRIPTOR_ADDR: begin',f:'dma_design.sv',l:'164',h:'2',c:'g'}
+,{cr:'m',t:'T',z:'                ERROR_STATUS_ADDR: begin',f:'dma_design.sv',l:'168',h:'0',c:'r'}
+,{cr:'c',t:'T',z:'                CONFIG_ADDR: begin',f:'dma_design.sv',l:'177',h:'8',c:'g'}
+,{cr:'c',t:'A',z:'            case (addr)',f:'dma_design.sv',l:'141',h:'2',c:'g'}
+]},
+{anchor:'cvg119',items:[{z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[0]) error_bus       <= 1\'b0;',f:'dma_design.sv',l:'170',h:'0',c:'r'}
+]},
+{anchor:'cvg120',items:[{z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[1]) error_timeout   <= 1\'b0;',f:'dma_design.sv',l:'171',h:'0',c:'r'}
+]},
+{anchor:'cvg121',items:[{z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[2]) error_alignment <= 1\'b0;',f:'dma_design.sv',l:'172',h:'0',c:'r'}
+]},
+{anchor:'cvg122',items:[{z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[3]) error_overflow  <= 1\'b0;',f:'dma_design.sv',l:'173',h:'0',c:'r'}
+]},
+{anchor:'cvg123',items:[{z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'                    if (wdata[4]) error_underflow <= 1\'b0;',f:'dma_design.sv',l:'174',h:'0',c:'r'}
+]},
+{anchor:'cvg124',items:[{z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma)',f:'dma_design.sv',l:'189',h:'17',c:'g'}
+]},
+{anchor:'cvg125',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'        else if (rd_en) begin',f:'dma_design.sv',l:'201',h:'31',c:'g'}
+,{cr:'c',t:'A',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'198',h:'27',c:'g'}
+]},
+{anchor:'cvg126',items:[{z:'            case (addr)',f:'dma_design.sv',l:'202',c:'G',p:'90.90'}
+,{cr:'c',t:'T',z:'                INTR_ADDR: begin',f:'dma_design.sv',l:'203',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'                CTRL_ADDR: begin',f:'dma_design.sv',l:'207',h:'5',c:'g'}
+,{cr:'c',t:'T',z:'                IO_ADDR_ADDR: begin',f:'dma_design.sv',l:'211',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                MEM_ADDR_ADDR: begin',f:'dma_design.sv',l:'215',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                EXTRA_INFO_ADDR: begin',f:'dma_design.sv',l:'219',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                STATUS_ADDR: begin',f:'dma_design.sv',l:'223',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                TRANSFER_COUNT_ADDR: begin',f:'dma_design.sv',l:'228',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                DESCRIPTOR_ADDR: begin',f:'dma_design.sv',l:'232',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'                ERROR_STATUS_ADDR: begin',f:'dma_design.sv',l:'236',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'                CONFIG_ADDR: begin',f:'dma_design.sv',l:'242',h:'8',c:'g'}
+,{cr:'m',t:'T',z:'                default: begin',f:'dma_design.sv',l:'248',h:'0',c:'r'}
+]},
+{anchor:'cvg127',items:[{z:'        if (!rst_n) begin',f:'dma_design.sv',l:'259',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'        if (!rst_n) begin',f:'dma_design.sv',l:'259',h:'2',c:'g'}
+,{cr:'c',t:'E',z:'        else begin',f:'dma_design.sv',l:'271',h:'13',c:'g'}
+]},
+{anchor:'cvg128',items:[{z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'            else if (status_busy) begin',f:'dma_design.sv',l:'279',h:'6',c:'g'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma) begin',f:'dma_design.sv',l:'273',h:'5',c:'g'}
+]},
+{anchor:'cvg129',items:[{z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'                if (transfer_count >= {17\'h0, ctrl_w_count}) begin',f:'dma_design.sv',l:'284',h:'4',c:'g'}
+]},
+{anchor:'cvg130',items:[{z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'            if (ctrl_start_dma && status_done)',f:'dma_design.sv',l:'296',h:'13',c:'g'}
+]}],
+b1249:[{dummy:0},
+{anchor:'cvg1250',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',h:'0',c:'r'}
+]}],
+b1253:[{dummy:0},
+{anchor:'cvg1254',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]}],
+b1256:[{dummy:0},
+{anchor:'cvg1257',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg1258',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg1259',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg1260',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]}],
+b1269:[{dummy:0},
+{anchor:'cvg1270',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',h:'0',c:'r'}
+]}],
+b1273:[{dummy:0},
+{anchor:'cvg1274',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]}],
+b1276:[{dummy:0},
+{anchor:'cvg1277',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg1278',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg1279',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg1280',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]}],
+b1293:[{dummy:0},
+{anchor:'cvg1294',items:[{z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',h:'0',c:'r'}
+]}],
+b1297:[{dummy:0},
+{anchor:'cvg1298',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]}],
+b1300:[{dummy:0},
+{anchor:'cvg1301',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg1302',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg1303',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg1304',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]}],
+b1313:[{dummy:0},
+{anchor:'cvg1314',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',h:'0',c:'r'}
+]}],
+b1317:[{dummy:0},
+{anchor:'cvg1318',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]}],
+b1320:[{dummy:0},
+{anchor:'cvg1321',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg1322',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg1323',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg1324',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]}],
+b1333:[{dummy:0},
+{anchor:'cvg1334',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',h:'0',c:'r'}
+]}],
+b1337:[{dummy:0},
+{anchor:'cvg1338',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]}],
+b1340:[{dummy:0},
+{anchor:'cvg1341',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg1342',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg1343',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg1344',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]}],
+b1356:[{dummy:0},
+{anchor:'cvg1357',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]}],
+b1359:[{dummy:0},
+{anchor:'cvg1360',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg1361',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg1362',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg1363',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]}],
+b1369:[{dummy:0},
+{anchor:'cvg1370',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]}],
+b1372:[{dummy:0},
+{anchor:'cvg1373',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg1374',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg1375',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg1376',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]}],
+b1379:[{dummy:0},
+{anchor:'cvg1380',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',h:'0',c:'r'}
+]}],
+b1383:[{dummy:0},
+{anchor:'cvg1384',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]}],
+b1386:[{dummy:0},
+{anchor:'cvg1387',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg1388',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg1389',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg1390',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]}],
+b1399:[{dummy:0},
+{anchor:'cvg1400',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',h:'0',c:'r'}
+]}],
+b1403:[{dummy:0},
+{anchor:'cvg1404',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]}],
+b1406:[{dummy:0},
+{anchor:'cvg1407',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg1408',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'E',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg1409',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg1410',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]}],
+b1427:[{dummy:0},
+{anchor:'cvg1428',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',h:'0',c:'r'}
+]}],
+b1431:[{dummy:0},
+{anchor:'cvg1432',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]}],
+b1434:[{dummy:0},
+{anchor:'cvg1435',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg1436',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'E',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg1437',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg1438',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]}],
+b1460:[{dummy:0},
+{anchor:'cvg1461',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]}],
+b1463:[{dummy:0},
+{anchor:'cvg1464',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1465',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1466',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1467',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]}],
+b1473:[{dummy:0},
+{anchor:'cvg1474',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]}],
+b1476:[{dummy:0},
+{anchor:'cvg1477',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg1478',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg1479',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg1480',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]}],
+b1486:[{dummy:0},
+{anchor:'cvg1487',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]}],
+b1489:[{dummy:0},
+{anchor:'cvg1490',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1491',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1492',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1493',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]}],
+b1494:[{dummy:0},
+{anchor:'cvg1495',items:[{z:'    if (rw.kind == UVM_WRITE) begin',f:'dma_adapter.sv',l:'17',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if (rw.kind == UVM_WRITE) begin',f:'dma_adapter.sv',l:'17',h:'14',c:'g'}
+,{cr:'c',t:'E',z:'    else begin // UVM_READ',f:'dma_adapter.sv',l:'22',h:'16',c:'g'}
+]}],
+b1502:[{dummy:0},
+{anchor:'cvg1503',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]}],
+b1505:[{dummy:0},
+{anchor:'cvg1506',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg1507',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg1508',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg1509',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]}],
+b1510:[{dummy:0},
+{anchor:'cvg1511',items:[{z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',h:'11',c:'g'}
+]},
+{anchor:'cvg1512',items:[{z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',h:'0',c:'r'}
+]}],
+b1516:[{dummy:0},
+{anchor:'cvg1517',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]}],
+b1519:[{dummy:0},
+{anchor:'cvg1520',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg1521',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg1522',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg1523',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]}],
+b1524:[{dummy:0},
+{anchor:'cvg1525',items:[{z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',h:'1',c:'g'}
+]},
+{anchor:'cvg1526',items:[{z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',h:'0',c:'r'}
+]},
+{anchor:'cvg1527',items:[{z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',h:'0',c:'r'}
+]},
+{anchor:'cvg1528',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',h:'0',c:'r'}
+]},
+{anchor:'cvg1529',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',h:'0',c:'r'}
+]},
+{anchor:'cvg1530',items:[{z:'    if(rdata == 32\'hFFFF_0000) // WRITE CHECK.... ',f:'dma_reg_sequence.sv',l:'63',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hFFFF_0000) // WRITE CHECK.... ',f:'dma_reg_sequence.sv',l:'63',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'65',h:'0',c:'r'}
+]},
+{anchor:'cvg1531',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',h:'0',c:'r'}
+]},
+{anchor:'cvg1532',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',h:'0',c:'r'}
+]}],
+b1536:[{dummy:0},
+{anchor:'cvg1537',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]}],
+b1539:[{dummy:0},
+{anchor:'cvg1540',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg1541',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg1542',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg1543',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]}],
+b1544:[{dummy:0},
+{anchor:'cvg1545',items:[{z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',h:'1',c:'g'}
+]},
+{anchor:'cvg1546',items:[{z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',h:'0',c:'r'}
+]},
+{anchor:'cvg1547',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',h:'0',c:'r'}
+]},
+{anchor:'cvg1548',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',h:'0',c:'r'}
+]},
+{anchor:'cvg1549',items:[{z:'    if(rdata == 32\'hABCD_0000)',f:'dma_reg_sequence.sv',l:'100',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hABCD_0000)',f:'dma_reg_sequence.sv',l:'100',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'102',h:'0',c:'r'}
+]},
+{anchor:'cvg1550',items:[{z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',h:'0',c:'r'}
+]},
+{anchor:'cvg1551',items:[{z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',h:'0',c:'r'}
+]}],
+b1555:[{dummy:0},
+{anchor:'cvg1556',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]}],
+b1558:[{dummy:0},
+{anchor:'cvg1559',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg1560',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg1561',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg1562',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]}],
+b1563:[{dummy:0},
+{anchor:'cvg1564',items:[{z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',h:'1',c:'g'}
+]},
+{anchor:'cvg1565',items:[{z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',h:'0',c:'r'}
+]},
+{anchor:'cvg1566',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',h:'0',c:'r'}
+]},
+{anchor:'cvg1567',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',h:'0',c:'r'}
+]},
+{anchor:'cvg1568',items:[{z:'    if (mir[0] != 0)',f:'dma_reg_sequence.sv',l:'136',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (mir[0] != 0)',f:'dma_reg_sequence.sv',l:'136',h:'0',c:'r'}
+,{cr:'c',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'138',h:'1',c:'g'}
+]},
+{anchor:'cvg1569',items:[{z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',h:'0',c:'r'}
+]},
+{anchor:'cvg1570',items:[{z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',h:'0',c:'r'}
+]},
+{anchor:'cvg1571',items:[{z:'    if(rdata == {15\'d0, 1\'b0, 15\'d4, 1\'b0}) // self cleared value !!',f:'dma_reg_sequence.sv',l:'141',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == {15\'d0, 1\'b0, 15\'d4, 1\'b0}) // self cleared value !!',f:'dma_reg_sequence.sv',l:'141',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'143',h:'0',c:'r'}
+]},
+{anchor:'cvg1572',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',h:'0',c:'r'}
+]},
+{anchor:'cvg1573',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',h:'0',c:'r'}
+]}],
+b1577:[{dummy:0},
+{anchor:'cvg1578',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]}],
+b1580:[{dummy:0},
+{anchor:'cvg1581',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg1582',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg1583',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg1584',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]}],
+b1585:[{dummy:0},
+{anchor:'cvg1588',items:[{z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',h:'1',c:'g'}
+]},
+{anchor:'cvg1589',items:[{z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',h:'0',c:'r'}
+]},
+{anchor:'cvg1590',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',h:'0',c:'r'}
+]},
+{anchor:'cvg1591',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',h:'0',c:'r'}
+]},
+{anchor:'cvg1592',items:[{z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'178',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'178',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'180',h:'0',c:'r'}
+]},
+{anchor:'cvg1593',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',h:'0',c:'r'}
+]},
+{anchor:'cvg1594',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',h:'0',c:'r'}
+]},
+{anchor:'cvg1595',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',h:'0',c:'r'}
+]},
+{anchor:'cvg1596',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',h:'0',c:'r'}
+]},
+{anchor:'cvg1597',items:[{z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'204',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'204',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'206',h:'0',c:'r'}
+]},
+{anchor:'cvg1598',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',h:'0',c:'r'}
+]},
+{anchor:'cvg1599',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',h:'0',c:'r'}
+]}],
+b1603:[{dummy:0},
+{anchor:'cvg1604',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]}],
+b1606:[{dummy:0},
+{anchor:'cvg1607',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg1608',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg1609',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg1610',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]}],
+b1611:[{dummy:0},
+{anchor:'cvg1614',items:[{z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',h:'1',c:'g'}
+]},
+{anchor:'cvg1615',items:[{z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',h:'0',c:'r'}
+]},
+{anchor:'cvg1616',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',h:'0',c:'r'}
+]},
+{anchor:'cvg1617',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',h:'0',c:'r'}
+]},
+{anchor:'cvg1618',items:[{z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'240',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'240',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'242',h:'0',c:'r'}
+]},
+{anchor:'cvg1619',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',h:'0',c:'r'}
+]},
+{anchor:'cvg1620',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',h:'0',c:'r'}
+]},
+{anchor:'cvg1621',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',h:'0',c:'r'}
+]},
+{anchor:'cvg1622',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',h:'0',c:'r'}
+]},
+{anchor:'cvg1623',items:[{z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'265',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'265',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'267',h:'0',c:'r'}
+]},
+{anchor:'cvg1624',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',h:'0',c:'r'}
+]},
+{anchor:'cvg1625',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',h:'0',c:'r'}
+]}],
+b1629:[{dummy:0},
+{anchor:'cvg1630',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]}],
+b1632:[{dummy:0},
+{anchor:'cvg1633',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg1634',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg1635',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg1636',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]}],
+b1637:[{dummy:0},
+{anchor:'cvg1638',items:[{z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',h:'1',c:'g'}
+]},
+{anchor:'cvg1639',items:[{z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',h:'0',c:'r'}
+]},
+{anchor:'cvg1640',items:[{z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',h:'0',c:'r'}
+]},
+{anchor:'cvg1641',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',h:'0',c:'r'}
+]},
+{anchor:'cvg1642',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',h:'0',c:'r'}
+]},
+{anchor:'cvg1643',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',h:'0',c:'r'}
+]},
+{anchor:'cvg1644',items:[{z:'      if(rdata != 32\'h0000_AB_C_D)',f:'dma_reg_sequence.sv',l:'326',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      if(rdata != 32\'h0000_AB_C_D)',f:'dma_reg_sequence.sv',l:'326',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'328',h:'0',c:'r'}
+]},
+{anchor:'cvg1645',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',h:'0',c:'r'}
+]},
+{anchor:'cvg1646',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',h:'0',c:'r'}
+]},
+{anchor:'cvg1647',items:[{z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',h:'0',c:'r'}
+]}],
+b1651:[{dummy:0},
+{anchor:'cvg1652',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]}],
+b1654:[{dummy:0},
+{anchor:'cvg1655',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg1656',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg1657',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg1658',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]}],
+b1659:[{dummy:0},
+{anchor:'cvg1660',items:[{z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',h:'1',c:'g'}
+]},
+{anchor:'cvg1661',items:[{z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',h:'0',c:'r'}
+]},
+{anchor:'cvg1662',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'357',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'357',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'357',h:'0',c:'r'}
+]},
+{anchor:'cvg1663',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'366',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'366',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'366',h:'0',c:'r'}
+]},
+{anchor:'cvg1664',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'376',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'376',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'376',h:'0',c:'r'}
+]},
+{anchor:'cvg1665',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'385',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'385',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg1666',items:[{z:'    if(rdata == 32\'hFFFFFFFF)',f:'dma_reg_sequence.sv',l:'387',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hFFFFFFFF)',f:'dma_reg_sequence.sv',l:'387',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'389',h:'0',c:'r'}
+]},
+{anchor:'cvg1667',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',h:'0',c:'r'}
+]},
+{anchor:'cvg1668',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',h:'0',c:'r'}
+]}],
+b1672:[{dummy:0},
+{anchor:'cvg1673',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]}],
+b1675:[{dummy:0},
+{anchor:'cvg1676',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg1677',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg1678',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg1679',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]}],
+b1680:[{dummy:0},
+{anchor:'cvg1682',items:[{z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',h:'1',c:'g'}
+]},
+{anchor:'cvg1683',items:[{z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',h:'0',c:'r'}
+]},
+{anchor:'cvg1684',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',h:'0',c:'r'}
+]},
+{anchor:'cvg1685',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',h:'0',c:'r'}
+]},
+{anchor:'cvg1686',items:[{z:'    if(rdata == rm.extra_info_reg_h.extra_info.value)',f:'dma_reg_sequence.sv',l:'420',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.extra_info_reg_h.extra_info.value)',f:'dma_reg_sequence.sv',l:'420',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'422',h:'0',c:'r'}
+]},
+{anchor:'cvg1687',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',h:'0',c:'r'}
+]},
+{anchor:'cvg1688',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',h:'0',c:'r'}
+]}],
+b1692:[{dummy:0},
+{anchor:'cvg1693',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]}],
+b1695:[{dummy:0},
+{anchor:'cvg1696',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg1697',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg1698',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg1699',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]}],
+b1700:[{dummy:0},
+{anchor:'cvg1702',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',h:'0',c:'r'}
+]},
+{anchor:'cvg1703',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',h:'0',c:'r'}
+]},
+{anchor:'cvg1704',items:[{z:'    if(rdata == rm.descriptor_addr_reg_h.descriptor_addr.value)',f:'dma_reg_sequence.sv',l:'450',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.descriptor_addr_reg_h.descriptor_addr.value)',f:'dma_reg_sequence.sv',l:'450',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'452',h:'0',c:'r'}
+]},
+{anchor:'cvg1705',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',h:'0',c:'r'}
+]},
+{anchor:'cvg1706',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',h:'0',c:'r'}
+]}],
+b1710:[{dummy:0},
+{anchor:'cvg1711',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]}],
+b1713:[{dummy:0},
+{anchor:'cvg1714',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg1715',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg1716',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg1717',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]}],
+b1718:[{dummy:0},
+{anchor:'cvg1719',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',h:'0',c:'r'}
+]},
+{anchor:'cvg1720',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',h:'0',c:'r'}
+]},
+{anchor:'cvg1721',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',h:'0',c:'r'}
+]},
+{anchor:'cvg1722',items:[{z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',h:'0',c:'r'}
+]},
+{anchor:'cvg1723',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',h:'0',c:'r'}
+]},
+{anchor:'cvg1724',items:[{z:'    if(rdata == 32\'h0)',f:'dma_reg_sequence.sv',l:'511',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'h0)',f:'dma_reg_sequence.sv',l:'511',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'513',h:'0',c:'r'}
+]},
+{anchor:'cvg1725',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',h:'0',c:'r'}
+]},
+{anchor:'cvg1726',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',h:'0',c:'r'}
+]}],
+b1730:[{dummy:0},
+{anchor:'cvg1731',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]}],
+b1733:[{dummy:0},
+{anchor:'cvg1734',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg1735',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg1736',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg1737',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]}],
+b1738:[{dummy:0},
+{anchor:'cvg1740',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',h:'0',c:'r'}
+]},
+{anchor:'cvg1741',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',h:'0',c:'r'}
+]},
+{anchor:'cvg1742',items:[{z:'      if(rdata == prio)',f:'dma_reg_sequence.sv',l:'549',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      if(rdata == prio)',f:'dma_reg_sequence.sv',l:'549',h:'4',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'551',h:'0',c:'r'}
+]},
+{anchor:'cvg1743',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',h:'0',c:'r'}
+]},
+{anchor:'cvg1744',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',h:'0',c:'r'}
+]},
+{anchor:'cvg1745',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',h:'0',c:'r'}
+]},
+{anchor:'cvg1746',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',h:'0',c:'r'}
+]},
+{anchor:'cvg1747',items:[{z:'    if(rdata == {23\'d0, rm.config_reg_h.descriptor_mode.value, rm.config_...',f:'dma_reg_sequence.sv',l:'573',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == {23\'d0, rm.config_reg_h.descriptor_mode.value, rm.config_...',f:'dma_reg_sequence.sv',l:'573',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'575',h:'0',c:'r'}
+]},
+{anchor:'cvg1748',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',h:'0',c:'r'}
+]},
+{anchor:'cvg1749',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',h:'0',c:'r'}
+]}],
+b1754:[{dummy:0},
+{anchor:'cvg1755',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]}],
+b1757:[{dummy:0},
+{anchor:'cvg1758',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1759',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1760',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg1761',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]}],
+b1762:[{dummy:0},
+{anchor:'cvg1763',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg1764',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg1765',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg1766',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]}],
+b1772:[{dummy:0},
+{anchor:'cvg1773',items:[{z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',h:'1',c:'g'}
+]},
+{anchor:'cvg1774',items:[{z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',h:'0',c:'r'}
+]}],
+b1776:[{dummy:0},
+{anchor:'cvg1777',items:[{z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',h:'30',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',h:'0',c:'r'}
+]},
+{anchor:'cvg1778',items:[{z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',h:'16',c:'g'}
+,{cr:'c',t:'A',z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',h:'14',c:'g'}
+]},
+{anchor:'cvg1779',items:[{z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',h:'16',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',h:'0',c:'r'}
+]}],
+b1785:[{dummy:0},
+{anchor:'cvg1786',items:[{z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',h:'1',c:'g'}
+]},
+{anchor:'cvg1787',items:[{z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',h:'0',c:'r'}
+]}],
+b1788:[{dummy:0},
+{anchor:'cvg1789',items:[{z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',h:'30',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',h:'0',c:'r'}
+]},
+{anchor:'cvg1790',items:[{z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',h:'16',c:'g'}
+,{cr:'c',t:'A',z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',h:'14',c:'g'}
+]}],
+b1796:[{dummy:0},
+{anchor:'cvg1797',items:[{z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',h:'1',c:'g'}
+]},
+{anchor:'cvg1798',items:[{z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',h:'0',c:'r'}
+]},
+{anchor:'cvg1799',items:[{z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',h:'0',c:'r'}
+]}],
+b1800:[{dummy:0},
+{anchor:'cvg1801',items:[{z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',h:'0',c:'r'}
+]}],
+b2012:[{dummy:0},
+{anchor:'cvg2013',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'28',h:'0',c:'r'}
+]}],
+b2016:[{dummy:0},
+{anchor:'cvg2017',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]}],
+b2019:[{dummy:0},
+{anchor:'cvg2020',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg2021',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg2022',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]},
+{anchor:'cvg2023',items:[{z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(INTR)',f:'dma_registers.sv',l:'7',h:'0',c:'r'}
+]}],
+b2032:[{dummy:0},
+{anchor:'cvg2033',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'112',h:'0',c:'r'}
+]}],
+b2036:[{dummy:0},
+{anchor:'cvg2037',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]}],
+b2039:[{dummy:0},
+{anchor:'cvg2040',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg2041',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg2042',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]},
+{anchor:'cvg2043',items:[{z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(CNTRL)',f:'dma_registers.sv',l:'82',h:'0',c:'r'}
+]}],
+b2056:[{dummy:0},
+{anchor:'cvg2057',items:[{z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if (has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'215',h:'0',c:'r'}
+]}],
+b2060:[{dummy:0},
+{anchor:'cvg2061',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]}],
+b2063:[{dummy:0},
+{anchor:'cvg2064',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg2065',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg2066',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]},
+{anchor:'cvg2067',items:[{z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(IO_ADDR)',f:'dma_registers.sv',l:'191',h:'0',c:'r'}
+]}],
+b2076:[{dummy:0},
+{anchor:'cvg2077',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'281',h:'0',c:'r'}
+]}],
+b2080:[{dummy:0},
+{anchor:'cvg2081',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]}],
+b2083:[{dummy:0},
+{anchor:'cvg2084',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg2085',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg2086',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]},
+{anchor:'cvg2087',items:[{z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(MEM_ADDR)',f:'dma_registers.sv',l:'256',h:'0',c:'r'}
+]}],
+b2096:[{dummy:0},
+{anchor:'cvg2097',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'345',h:'0',c:'r'}
+]}],
+b2100:[{dummy:0},
+{anchor:'cvg2101',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]}],
+b2103:[{dummy:0},
+{anchor:'cvg2104',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg2105',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg2106',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]},
+{anchor:'cvg2107',items:[{z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(EXTRA_INFO)',f:'dma_registers.sv',l:'322',h:'0',c:'r'}
+]}],
+b2119:[{dummy:0},
+{anchor:'cvg2120',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]}],
+b2122:[{dummy:0},
+{anchor:'cvg2123',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg2124',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg2125',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg2126',items:[{z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(STATUS)',f:'dma_registers.sv',l:'385',h:'0',c:'r'}
+]}],
+b2132:[{dummy:0},
+{anchor:'cvg2133',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]}],
+b2135:[{dummy:0},
+{anchor:'cvg2136',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg2137',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg2138',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]},
+{anchor:'cvg2139',items:[{z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(TRANSFER_COUNT)',f:'dma_registers.sv',l:'556',h:'0',c:'r'}
+]}],
+b2142:[{dummy:0},
+{anchor:'cvg2143',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'643',h:'0',c:'r'}
+]}],
+b2146:[{dummy:0},
+{anchor:'cvg2147',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]}],
+b2149:[{dummy:0},
+{anchor:'cvg2150',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg2151',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg2152',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]},
+{anchor:'cvg2153',items:[{z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(DESCRIPTOR_ADDR)',f:'dma_registers.sv',l:'614',h:'0',c:'r'}
+]}],
+b2162:[{dummy:0},
+{anchor:'cvg2163',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'730',h:'0',c:'r'}
+]}],
+b2166:[{dummy:0},
+{anchor:'cvg2167',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]}],
+b2169:[{dummy:0},
+{anchor:'cvg2170',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg2171',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'E',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg2172',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]},
+{anchor:'cvg2173',items:[{z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(ERROR_STATUS)',f:'dma_registers.sv',l:'683',h:'0',c:'r'}
+]}],
+b2190:[{dummy:0},
+{anchor:'cvg2191',items:[{z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(has_coverage(UVM_CVR_FIELD_VALS))',f:'dma_registers.sv',l:'925',h:'0',c:'r'}
+]}],
+b2194:[{dummy:0},
+{anchor:'cvg2195',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]}],
+b2197:[{dummy:0},
+{anchor:'cvg2198',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg2199',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'E',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg2200',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]},
+{anchor:'cvg2201',items:[{z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+,{cr:'m',t:'A',z:' `uvm_object_utils(CONFIG)',f:'dma_registers.sv',l:'861',h:'0',c:'r'}
+]}],
+b2223:[{dummy:0},
+{anchor:'cvg2224',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]}],
+b2226:[{dummy:0},
+{anchor:'cvg2227',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2228',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2229',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2230',items:[{z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(regmodel)',f:'dma_reg_block.sv',l:'2',h:'0',c:'r'}
+]}],
+b2236:[{dummy:0},
+{anchor:'cvg2237',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]}],
+b2239:[{dummy:0},
+{anchor:'cvg2240',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg2241',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg2242',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]},
+{anchor:'cvg2243',items:[{z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transaction)',f:'dma_sequence_item.sv',l:'3',h:'0',c:'r'}
+]}],
+b2249:[{dummy:0},
+{anchor:'cvg2250',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]}],
+b2252:[{dummy:0},
+{anchor:'cvg2253',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2254',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2255',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2256',items:[{z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_adapter)',f:'dma_adapter.sv',l:'2',h:'0',c:'r'}
+]}],
+b2257:[{dummy:0},
+{anchor:'cvg2258',items:[{z:'    if (rw.kind == UVM_WRITE) begin',f:'dma_adapter.sv',l:'17',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if (rw.kind == UVM_WRITE) begin',f:'dma_adapter.sv',l:'17',h:'14',c:'g'}
+,{cr:'c',t:'E',z:'    else begin // UVM_READ',f:'dma_adapter.sv',l:'22',h:'16',c:'g'}
+]}],
+b2265:[{dummy:0},
+{anchor:'cvg2266',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]}],
+b2268:[{dummy:0},
+{anchor:'cvg2269',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg2270',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg2271',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]},
+{anchor:'cvg2272',items:[{z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_reg_base_seq)',f:'dma_reg_sequence.sv',l:'5',h:'0',c:'r'}
+]}],
+b2273:[{dummy:0},
+{anchor:'cvg2274',items:[{z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (rm == null)',f:'dma_reg_sequence.sv',l:'17',h:'11',c:'g'}
+]},
+{anchor:'cvg2275',items:[{z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(&#34;REG_SEQ&#34;, &#34;Register model handle is NULL&#34;...',f:'dma_reg_sequence.sv',l:'18',h:'0',c:'r'}
+]}],
+b2279:[{dummy:0},
+{anchor:'cvg2280',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]}],
+b2282:[{dummy:0},
+{anchor:'cvg2283',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg2284',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg2285',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]},
+{anchor:'cvg2286',items:[{z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_01_reset_write_read_seq)',f:'dma_reg_sequence.sv',l:'24',h:'0',c:'r'}
+]}],
+b2287:[{dummy:0},
+{anchor:'cvg2288',items:[{z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'27',h:'1',c:'g'}
+]},
+{anchor:'cvg2289',items:[{z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'28',h:'0',c:'r'}
+]},
+{anchor:'cvg2290',items:[{z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'39',h:'0',c:'r'}
+]},
+{anchor:'cvg2291',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'51',h:'0',c:'r'}
+]},
+{anchor:'cvg2292',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'61',h:'0',c:'r'}
+]},
+{anchor:'cvg2293',items:[{z:'    if(rdata == 32\'hFFFF_0000) // WRITE CHECK.... ',f:'dma_reg_sequence.sv',l:'63',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hFFFF_0000) // WRITE CHECK.... ',f:'dma_reg_sequence.sv',l:'63',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'65',h:'0',c:'r'}
+]},
+{anchor:'cvg2294',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'64',h:'0',c:'r'}
+]},
+{anchor:'cvg2295',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'66',h:'0',c:'r'}
+]}],
+b2299:[{dummy:0},
+{anchor:'cvg2300',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]}],
+b2302:[{dummy:0},
+{anchor:'cvg2303',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg2304',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg2305',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]},
+{anchor:'cvg2306',items:[{z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(intr_03_mask_seq)',f:'dma_reg_sequence.sv',l:'73',h:'0',c:'r'}
+]}],
+b2307:[{dummy:0},
+{anchor:'cvg2308',items:[{z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.intr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'76',h:'1',c:'g'}
+]},
+{anchor:'cvg2309',items:[{z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;INTR_HDL_PATH&#34;, &#34;INTR_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'77',h:'0',c:'r'}
+]},
+{anchor:'cvg2310',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'89',h:'0',c:'r'}
+]},
+{anchor:'cvg2311',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'98',h:'0',c:'r'}
+]},
+{anchor:'cvg2312',items:[{z:'    if(rdata == 32\'hABCD_0000)',f:'dma_reg_sequence.sv',l:'100',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hABCD_0000)',f:'dma_reg_sequence.sv',l:'100',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'102',h:'0',c:'r'}
+]},
+{anchor:'cvg2313',items:[{z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;REPORT&#34;, &#34;[INTR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'101',h:'0',c:'r'}
+]},
+{anchor:'cvg2314',items:[{z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[INTR_REG] DOES\'NT MATCH write and rea...',f:'dma_reg_sequence.sv',l:'103',h:'0',c:'r'}
+]}],
+b2318:[{dummy:0},
+{anchor:'cvg2319',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]}],
+b2321:[{dummy:0},
+{anchor:'cvg2322',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg2323',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg2324',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]},
+{anchor:'cvg2325',items:[{z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ctrl_01_start_dma_seq)',f:'dma_reg_sequence.sv',l:'110',h:'0',c:'r'}
+]}],
+b2326:[{dummy:0},
+{anchor:'cvg2327',items:[{z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.cntrl_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'113',h:'1',c:'g'}
+]},
+{anchor:'cvg2328',items:[{z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'         `uvm_fatal(&#34;CNTRL_HDL_PATH&#34;, &#34;CNTRL_REG backdoor path missing&#34;...',f:'dma_reg_sequence.sv',l:'114',h:'0',c:'r'}
+]},
+{anchor:'cvg2329',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'124',h:'0',c:'r'}
+]},
+{anchor:'cvg2330',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'134',h:'0',c:'r'}
+]},
+{anchor:'cvg2331',items:[{z:'    if (mir[0] != 0)',f:'dma_reg_sequence.sv',l:'136',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (mir[0] != 0)',f:'dma_reg_sequence.sv',l:'136',h:'0',c:'r'}
+,{cr:'c',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'138',h:'1',c:'g'}
+]},
+{anchor:'cvg2332',items:[{z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_error(&#34;CTRL_01&#34;, &#34;start_dma did not self-clear&#34;...',f:'dma_reg_sequence.sv',l:'137',h:'0',c:'r'}
+]},
+{anchor:'cvg2333',items:[{z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;CTRL_01&#34;, &#34;start_dma self-clear OK&#34;, UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'139',h:'0',c:'r'}
+]},
+{anchor:'cvg2334',items:[{z:'    if(rdata == {15\'d0, 1\'b0, 15\'d4, 1\'b0}) // self cleared value !!',f:'dma_reg_sequence.sv',l:'141',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == {15\'d0, 1\'b0, 15\'d4, 1\'b0}) // self cleared value !!',f:'dma_reg_sequence.sv',l:'141',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'143',h:'0',c:'r'}
+]},
+{anchor:'cvg2335',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CTRL_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'142',h:'0',c:'r'}
+]},
+{anchor:'cvg2336',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CTRL_REG] DOES\'NT MATCH write and read...',f:'dma_reg_sequence.sv',l:'144',h:'0',c:'r'}
+]}],
+b2340:[{dummy:0},
+{anchor:'cvg2341',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]}],
+b2343:[{dummy:0},
+{anchor:'cvg2344',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg2345',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg2346',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]},
+{anchor:'cvg2347',items:[{z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ioa_01_rw_seq)',f:'dma_reg_sequence.sv',l:'151',h:'0',c:'r'}
+]}],
+b2348:[{dummy:0},
+{anchor:'cvg2349',items:[{z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.io_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'154',h:'1',c:'g'}
+]},
+{anchor:'cvg2350',items:[{z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;IO_ADDR_HDL_PATH&#34;, &#34;IO_ADDR_REG backdoor path missing...',f:'dma_reg_sequence.sv',l:'155',h:'0',c:'r'}
+]},
+{anchor:'cvg2351',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'168',h:'0',c:'r'}
+]},
+{anchor:'cvg2352',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'176',h:'0',c:'r'}
+]},
+{anchor:'cvg2353',items:[{z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'178',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'178',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'180',h:'0',c:'r'}
+]},
+{anchor:'cvg2354',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'179',h:'0',c:'r'}
+]},
+{anchor:'cvg2355',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'181',h:'0',c:'r'}
+]},
+{anchor:'cvg2356',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'194',h:'0',c:'r'}
+]},
+{anchor:'cvg2357',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'202',h:'0',c:'r'}
+]},
+{anchor:'cvg2358',items:[{z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'204',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.io_addr_reg_h.io_addr.value)',f:'dma_reg_sequence.sv',l:'204',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'206',h:'0',c:'r'}
+]},
+{anchor:'cvg2359',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[IO_ADDR_REG] MATCH\'s write and read value...&#34;...',f:'dma_reg_sequence.sv',l:'205',h:'0',c:'r'}
+]},
+{anchor:'cvg2360',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[IO_ADDR_REG] DOES\'NT MATCH write and r...',f:'dma_reg_sequence.sv',l:'207',h:'0',c:'r'}
+]}],
+b2366:[{dummy:0},
+{anchor:'cvg2367',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]}],
+b2369:[{dummy:0},
+{anchor:'cvg2370',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg2371',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg2372',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]},
+{anchor:'cvg2373',items:[{z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(mem_01_rw_seq)',f:'dma_reg_sequence.sv',l:'214',h:'0',c:'r'}
+]}],
+b2374:[{dummy:0},
+{anchor:'cvg2375',items:[{z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.mem_addr_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'217',h:'1',c:'g'}
+]},
+{anchor:'cvg2376',items:[{z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_fatal(&#34;MEM_ADDR_HDL_PATH&#34;, &#34;MEM_ADDR_REG backdoor path missin...',f:'dma_reg_sequence.sv',l:'218',h:'0',c:'r'}
+]},
+{anchor:'cvg2377',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'230',h:'0',c:'r'}
+]},
+{anchor:'cvg2378',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'238',h:'0',c:'r'}
+]},
+{anchor:'cvg2379',items:[{z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'240',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'240',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'242',h:'0',c:'r'}
+]},
+{anchor:'cvg2380',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'241',h:'0',c:'r'}
+]},
+{anchor:'cvg2381',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'243',h:'0',c:'r'}
+]},
+{anchor:'cvg2382',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'255',h:'0',c:'r'}
+]},
+{anchor:'cvg2383',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'263',h:'0',c:'r'}
+]},
+{anchor:'cvg2384',items:[{z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'265',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.mem_addr_reg_h.mem_addr.value)',f:'dma_reg_sequence.sv',l:'265',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'267',h:'0',c:'r'}
+]},
+{anchor:'cvg2385',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[MEM_ADDR_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'266',h:'0',c:'r'}
+]},
+{anchor:'cvg2386',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[MEM_ADDR_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'268',h:'0',c:'r'}
+]}],
+b2392:[{dummy:0},
+{anchor:'cvg2393',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]}],
+b2395:[{dummy:0},
+{anchor:'cvg2396',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg2397',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg2398',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]},
+{anchor:'cvg2399',items:[{z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(status_01_busy_seq)',f:'dma_reg_sequence.sv',l:'276',h:'0',c:'r'}
+]}],
+b2400:[{dummy:0},
+{anchor:'cvg2401',items:[{z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'      if(!rm.status_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'279',h:'1',c:'g'}
+]},
+{anchor:'cvg2402',items:[{z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;STATUS_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path missi...',f:'dma_reg_sequence.sv',l:'280',h:'0',c:'r'}
+]},
+{anchor:'cvg2403',items:[{z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'284',h:'0',c:'r'}
+]},
+{anchor:'cvg2404',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'306',h:'0',c:'r'}
+]},
+{anchor:'cvg2405',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'315',h:'0',c:'r'}
+]},
+{anchor:'cvg2406',items:[{z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'                UVM_LOW)',f:'dma_reg_sequence.sv',l:'324',h:'0',c:'r'}
+]},
+{anchor:'cvg2407',items:[{z:'      if(rdata != 32\'h0000_AB_C_D)',f:'dma_reg_sequence.sv',l:'326',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      if(rdata != 32\'h0000_AB_C_D)',f:'dma_reg_sequence.sv',l:'326',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'328',h:'0',c:'r'}
+]},
+{anchor:'cvg2408',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[STATUS_REG] MATCH\'s write & read value as n...',f:'dma_reg_sequence.sv',l:'327',h:'0',c:'r'}
+]},
+{anchor:'cvg2409',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[STATUS_REG] DOES\'NT MATCH write & re...',f:'dma_reg_sequence.sv',l:'329',h:'0',c:'r'}
+]},
+{anchor:'cvg2410',items:[{z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      UVM_MEDIUM)',f:'dma_reg_sequence.sv',l:'333',h:'0',c:'r'}
+]}],
+b2414:[{dummy:0},
+{anchor:'cvg2415',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]}],
+b2417:[{dummy:0},
+{anchor:'cvg2418',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg2419',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg2420',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]},
+{anchor:'cvg2421',items:[{z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(transfer_01_ro_seq)',f:'dma_reg_sequence.sv',l:'340',h:'0',c:'r'}
+]}],
+b2422:[{dummy:0},
+{anchor:'cvg2423',items:[{z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.transfer_count_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'343',h:'1',c:'g'}
+]},
+{anchor:'cvg2424',items:[{z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_fatal(&#34;TRANSFER_COUNT_HDL_PATH&#34;, &#34;TRANSFER_COUNT_REG backdoo...',f:'dma_reg_sequence.sv',l:'344',h:'0',c:'r'}
+]},
+{anchor:'cvg2425',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'357',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'357',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'357',h:'0',c:'r'}
+]},
+{anchor:'cvg2426',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'366',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'366',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'366',h:'0',c:'r'}
+]},
+{anchor:'cvg2427',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'376',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'376',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'376',h:'0',c:'r'}
+]},
+{anchor:'cvg2428',items:[{z:'             )',f:'dma_reg_sequence.sv',l:'385',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'             )',f:'dma_reg_sequence.sv',l:'385',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'             )',f:'dma_reg_sequence.sv',l:'385',h:'0',c:'r'}
+]},
+{anchor:'cvg2429',items:[{z:'    if(rdata == 32\'hFFFFFFFF)',f:'dma_reg_sequence.sv',l:'387',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'hFFFFFFFF)',f:'dma_reg_sequence.sv',l:'387',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'389',h:'0',c:'r'}
+]},
+{anchor:'cvg2430',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value....',f:'dma_reg_sequence.sv',l:'388',h:'0',c:'r'}
+]},
+{anchor:'cvg2431',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write an...',f:'dma_reg_sequence.sv',l:'390',h:'0',c:'r'}
+]}],
+b2435:[{dummy:0},
+{anchor:'cvg2436',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]}],
+b2438:[{dummy:0},
+{anchor:'cvg2439',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg2440',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg2441',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]},
+{anchor:'cvg2442',items:[{z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(ext_01_rw_seq)',f:'dma_reg_sequence.sv',l:'397',h:'0',c:'r'}
+]}],
+b2443:[{dummy:0},
+{anchor:'cvg2444',items:[{z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!rm.extra_info_reg_h.has_hdl_path())',f:'dma_reg_sequence.sv',l:'400',h:'1',c:'g'}
+]},
+{anchor:'cvg2445',items:[{z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'       `uvm_fatal(&#34;EXTRA_INFO_HDL_PATH&#34;, &#34;EXTRA_INFO_REG backdoor path mi...',f:'dma_reg_sequence.sv',l:'401',h:'0',c:'r'}
+]},
+{anchor:'cvg2446',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'410',h:'0',c:'r'}
+]},
+{anchor:'cvg2447',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'418',h:'0',c:'r'}
+]},
+{anchor:'cvg2448',items:[{z:'    if(rdata == rm.extra_info_reg_h.extra_info.value)',f:'dma_reg_sequence.sv',l:'420',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.extra_info_reg_h.extra_info.value)',f:'dma_reg_sequence.sv',l:'420',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'422',h:'0',c:'r'}
+]},
+{anchor:'cvg2449',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[TRANSFER_REG] MATCH\'s write and read value......',f:'dma_reg_sequence.sv',l:'421',h:'0',c:'r'}
+]},
+{anchor:'cvg2450',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[TRANSFER_REG] DOES\'NT MATCH write and ...',f:'dma_reg_sequence.sv',l:'423',h:'0',c:'r'}
+]}],
+b2455:[{dummy:0},
+{anchor:'cvg2456',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]}],
+b2458:[{dummy:0},
+{anchor:'cvg2459',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg2460',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg2461',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]},
+{anchor:'cvg2462',items:[{z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(desc_01_rw_seq)',f:'dma_reg_sequence.sv',l:'429',h:'0',c:'r'}
+]}],
+b2463:[{dummy:0},
+{anchor:'cvg2464',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'440',h:'0',c:'r'}
+]},
+{anchor:'cvg2465',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'448',h:'0',c:'r'}
+]},
+{anchor:'cvg2466',items:[{z:'    if(rdata == rm.descriptor_addr_reg_h.descriptor_addr.value)',f:'dma_reg_sequence.sv',l:'450',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == rm.descriptor_addr_reg_h.descriptor_addr.value)',f:'dma_reg_sequence.sv',l:'450',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'452',h:'0',c:'r'}
+]},
+{anchor:'cvg2467',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[DESCRIPTOR_ADDR_REG] MATCH\'s write and read v...',f:'dma_reg_sequence.sv',l:'451',h:'0',c:'r'}
+]},
+{anchor:'cvg2468',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[DESCRIPTOR_ADDR_REG] DOES\'NT MATCH wri...',f:'dma_reg_sequence.sv',l:'453',h:'0',c:'r'}
+]}],
+b2473:[{dummy:0},
+{anchor:'cvg2474',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]}],
+b2476:[{dummy:0},
+{anchor:'cvg2477',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg2478',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg2479',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]},
+{anchor:'cvg2480',items:[{z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(err_01_w1c_seq)',f:'dma_reg_sequence.sv',l:'460',h:'0',c:'r'}
+]}],
+b2481:[{dummy:0},
+{anchor:'cvg2482',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'473',h:'0',c:'r'}
+]},
+{anchor:'cvg2483',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'483',h:'0',c:'r'}
+]},
+{anchor:'cvg2484',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'492',h:'0',c:'r'}
+]},
+{anchor:'cvg2485',items:[{z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'               UVM_LOW)',f:'dma_reg_sequence.sv',l:'501',h:'0',c:'r'}
+]},
+{anchor:'cvg2486',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'509',h:'0',c:'r'}
+]},
+{anchor:'cvg2487',items:[{z:'    if(rdata == 32\'h0)',f:'dma_reg_sequence.sv',l:'511',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == 32\'h0)',f:'dma_reg_sequence.sv',l:'511',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'513',h:'0',c:'r'}
+]},
+{anchor:'cvg2488',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[ERROR_STATUS_REG] MATCH\'s read value as Zero....',f:'dma_reg_sequence.sv',l:'512',h:'0',c:'r'}
+]},
+{anchor:'cvg2489',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[ERROR_STATUS_REG] DOES\'NT MATCH read v...',f:'dma_reg_sequence.sv',l:'514',h:'0',c:'r'}
+]}],
+b2493:[{dummy:0},
+{anchor:'cvg2494',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]}],
+b2496:[{dummy:0},
+{anchor:'cvg2497',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg2498',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg2499',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]},
+{anchor:'cvg2500',items:[{z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(cfg_01_priority_seq)',f:'dma_reg_sequence.sv',l:'521',h:'0',c:'r'}
+]}],
+b2501:[{dummy:0},
+{anchor:'cvg2502',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'540',h:'0',c:'r'}
+]},
+{anchor:'cvg2503',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'548',h:'0',c:'r'}
+]},
+{anchor:'cvg2504',items:[{z:'      if(rdata == prio)',f:'dma_reg_sequence.sv',l:'549',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      if(rdata == prio)',f:'dma_reg_sequence.sv',l:'549',h:'4',c:'g'}
+,{cr:'m',t:'E',z:'      else',f:'dma_reg_sequence.sv',l:'551',h:'0',c:'r'}
+]},
+{anchor:'cvg2505',items:[{z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',h:'4',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s prio and read value.......',f:'dma_reg_sequence.sv',l:'550',h:'0',c:'r'}
+]},
+{anchor:'cvg2506',items:[{z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'        `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH prio and r...',f:'dma_reg_sequence.sv',l:'552',h:'0',c:'r'}
+]},
+{anchor:'cvg2507',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'564',h:'0',c:'r'}
+]},
+{anchor:'cvg2508',items:[{z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'              UVM_LOW)',f:'dma_reg_sequence.sv',l:'572',h:'0',c:'r'}
+]},
+{anchor:'cvg2509',items:[{z:'    if(rdata == {23\'d0, rm.config_reg_h.descriptor_mode.value, rm.config_...',f:'dma_reg_sequence.sv',l:'573',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(rdata == {23\'d0, rm.config_reg_h.descriptor_mode.value, rm.config_...',f:'dma_reg_sequence.sv',l:'573',h:'1',c:'g'}
+,{cr:'m',t:'E',z:'    else',f:'dma_reg_sequence.sv',l:'575',h:'0',c:'r'}
+]},
+{anchor:'cvg2510',items:[{z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;REPORT&#34;, &#34;[CONFIG_REG] MATCH\'s write and read value........',f:'dma_reg_sequence.sv',l:'574',h:'0',c:'r'}
+]},
+{anchor:'cvg2511',items:[{z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_error(&#34;REPORT_ERROR&#34;, &#34;[CONFIG_REG] DOES\'NT MATCH write and re...',f:'dma_reg_sequence.sv',l:'576',h:'0',c:'r'}
+]}],
+b2517:[{dummy:0},
+{anchor:'cvg2518',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]}],
+b2520:[{dummy:0},
+{anchor:'cvg2521',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2522',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2523',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]},
+{anchor:'cvg2524',items:[{z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'  `uvm_object_utils(dma_sequence)',f:'dma_sequence.sv',l:'2',h:'0',c:'r'}
+]}],
+b2525:[{dummy:0},
+{anchor:'cvg2526',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg2527',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg2528',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]},
+{anchor:'cvg2529',items:[{z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+,{cr:'m',t:'E',z:'      `uvm_do(req);',f:'dma_sequence.sv',l:'9',h:'0',c:'r'}
+]}],
+b2535:[{dummy:0},
+{anchor:'cvg2536',items:[{z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_driver.sv',l:'10',h:'1',c:'g'}
+]},
+{anchor:'cvg2537',items:[{z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(&#34;DRV&#34;, &#34;VIF NOT FOUND&#34;)',f:'dma_driver.sv',l:'11',h:'0',c:'r'}
+]}],
+b2539:[{dummy:0},
+{anchor:'cvg2540',items:[{z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',h:'30',c:'g'}
+,{cr:'m',t:'A',z:'      `uvm_info(&#34;DRV&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_driver.sv',l:'31',h:'0',c:'r'}
+]},
+{anchor:'cvg2541',items:[{z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',h:'16',c:'g'}
+,{cr:'c',t:'A',z:'      if(req.rd_en) begin',f:'dma_driver.sv',l:'34',h:'14',c:'g'}
+]},
+{anchor:'cvg2542',items:[{z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',h:'16',c:'g'}
+,{cr:'m',t:'A',z:'        `uvm_info(&#34;DRV&#34;, $sformatf(&#34;REQ in drv is updated to send rdata[0...',f:'dma_driver.sv',l:'35',h:'0',c:'r'}
+]}],
+b2548:[{dummy:0},
+{anchor:'cvg2549',items:[{z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(virtual dma_interface)::get(this,&#34;&#34;,&#34;vif&#34;...',f:'dma_monitor.sv',l:'14',h:'1',c:'g'}
+]},
+{anchor:'cvg2550',items:[{z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(get_full_name(),&#34;Monitor didnt get interface&#34;)',f:'dma_monitor.sv',l:'15',h:'0',c:'r'}
+]}],
+b2551:[{dummy:0},
+{anchor:'cvg2552',items:[{z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',h:'30',c:'g'}
+,{cr:'m',t:'A',z:'       `uvm_info(&#34;MON&#34;, req.print_trx(), UVM_MEDIUM)',f:'dma_monitor.sv',l:'29',h:'0',c:'r'}
+]},
+{anchor:'cvg2553',items:[{z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',h:'16',c:'g'}
+,{cr:'c',t:'A',z:'       if(req.rd_en)',f:'dma_monitor.sv',l:'31',h:'14',c:'g'}
+]}],
+b2559:[{dummy:0},
+{anchor:'cvg2560',items:[{z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',c:'Y',p:'50.00'}
+,{cr:'m',t:'I',z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(!uvm_config_db#(uvm_active_passive_enum)::get(this,&#34;&#34;,&#34;is_active&#34;...',f:'dma_agent.sv',l:'12',h:'1',c:'g'}
+]},
+{anchor:'cvg2561',items:[{z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',c:'R',p:'0.00'}
+,{cr:'m',t:'I',z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',h:'0',c:'r'}
+,{cr:'m',t:'A',z:'      `uvm_fatal(get_full_name(),&#34;Agent not set&#34;);',f:'dma_agent.sv',l:'13',h:'0',c:'r'}
+]},
+{anchor:'cvg2562',items:[{z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'15',h:'0',c:'r'}
+]}],
+b2563:[{dummy:0},
+{anchor:'cvg2564',items:[{z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(get_is_active()==UVM_ACTIVE)',f:'dma_agent.sv',l:'25',h:'0',c:'r'}
+]}],
+dummyEnd:0
+};
+processBranchesData(g_data);

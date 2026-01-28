@@ -20,7 +20,7 @@ module top;
 
   initial begin
     uvm_config_db#(virtual dma_interface)::set(null,"","vif",vif);
-    run_test(/*"intr_01_test"*/ /*"regression_test"*/);
+    run_test(/*"regression_test"*/);
   end
 
   initial begin

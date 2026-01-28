@@ -1,0 +1,247 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -assertdebug -l dma.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit" 
+# Start time: 23:12:15 on Jan 27,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dma_interface(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.dma_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.dma_interface(fast)
+# Loading work.dma_design(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test regression_test...
+# UVM_INFO dma_driver.sv(31) @ 15: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x400 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 65: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000000] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 65: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x400 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(39) @ 65: uvm_test_top.env_h.agt1.seqr@@seq1 [REG_SEQ:[READ AFTER RESET]] [INTR_01] Desired=0x00000000, Mirror=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(51) @ 65: uvm_test_top.env_h.agt1.seqr@@seq1 [REG_SEQ:[WRITE]] [INTR_01] [BACKDOOR-WRITE] Desired=0xffff0000, Mirror=0xffff0000, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 65: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x400 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 115: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0xffff0000] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 115: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x400 | rdata = 0xffff0000
+#  
+# UVM_INFO dma_reg_sequence.sv(61) @ 115: uvm_test_top.env_h.agt1.seqr@@seq1 [REG_SEQ:[READ]] [INTR_01] Desired=0xffff0000, Mirror=0xffff0000, rdata=0xffff0000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(64) @ 115: uvm_test_top.env_h.agt1.seqr@@seq1 [REPORT] [INTR_REG] MATCH's write and read value...
+# UVM_INFO dma_driver.sv(31) @ 115: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0xabcd0000 | addr = 0x400 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 165: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0xabcd0000 | addr = 0x400 | rdata = 0xffff0000
+#  
+# UVM_INFO dma_reg_sequence.sv(89) @ 165: uvm_test_top.env_h.agt1.seqr@@seq2 [REG_SEQ:[WRITE]] [INTR_03] Desired=0xabcd0000, Mirror=0xffff0000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(98) @ 165: uvm_test_top.env_h.agt1.seqr@@seq2 [REG_SEQ:[READ]] [INTR_03] [BACKDOOR-READ] Desired=0xabcd0000, Mirror=0xabcd0000, rdata=0xabcd0000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(101) @ 165: uvm_test_top.env_h.agt1.seqr@@seq2 [REPORT] [INTR_REG] MATCH's write and read value...
+# UVM_INFO dma_driver.sv(31) @ 165: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x9 | addr = 0x404 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 215: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x9 | addr = 0x404 | rdata = 0xffff0000
+#  
+# UVM_INFO dma_reg_sequence.sv(124) @ 215: uvm_test_top.env_h.agt1.seqr@@seq3 [REG_SEQ:[WRITE]] [CNTRL_01] Desired=0x00000009, Mirror=0x00000000, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 215: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x404 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 265: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000008] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 265: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x404 | rdata = 0x8
+#  
+# UVM_INFO dma_reg_sequence.sv(134) @ 265: uvm_test_top.env_h.agt1.seqr@@seq3 [REG_SEQ:[READ]] [CNTRL_01] Desired=0x00000008, Mirror=0x00000008, rdata=0x00000008 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(139) @ 265: uvm_test_top.env_h.agt1.seqr@@seq3 [CTRL_01] start_dma self-clear OK
+# UVM_INFO dma_reg_sequence.sv(142) @ 265: uvm_test_top.env_h.agt1.seqr@@seq3 [REPORT] [CTRL_REG] MATCH's write and read value...
+# UVM_INFO dma_reg_sequence.sv(168) @ 265: uvm_test_top.env_h.agt1.seqr@@seq4 [REG_SEQ:[WRITE]] [IO_ADDR_01] [BACKDOOR-WRITE] Desired=0xf2b6fc25, Mirror=0xf2b6fc25 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(176) @ 265: uvm_test_top.env_h.agt1.seqr@@seq4 [REG_SEQ:[READ]] [IO_ADDR_01] [BACKDOOR-READ] Desired=0xf2b6fc25, Mirror=0xf2b6fc25, rdata=0xf2b6fc25 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(179) @ 265: uvm_test_top.env_h.agt1.seqr@@seq4 [REPORT] [IO_ADDR_REG] MATCH's write and read value...
+# UVM_INFO dma_driver.sv(31) @ 265: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0xc742c1c7 | addr = 0x408 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 315: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0xc742c1c7 | addr = 0x408 | rdata = 0x8
+#  
+# UVM_INFO dma_reg_sequence.sv(194) @ 315: uvm_test_top.env_h.agt1.seqr@@seq4 [REG_SEQ:[WRITE]] [IO_ADDR_01] [BACKDOOR-WRITE] Desired=0xc742c1c7, Mirror=0xf2b6fc25 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 315: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x408 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 365: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0xc742c1c7] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 365: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x408 | rdata = 0xc742c1c7
+#  
+# UVM_INFO dma_reg_sequence.sv(202) @ 365: uvm_test_top.env_h.agt1.seqr@@seq4 [REG_SEQ:[READ]] [IO_ADDR_01] [BACKDOOR-READ] Desired=0xc742c1c7, Mirror=0xc742c1c7, rdata=0xc742c1c7 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(205) @ 365: uvm_test_top.env_h.agt1.seqr@@seq4 [REPORT] [IO_ADDR_REG] MATCH's write and read value...
+# UVM_INFO dma_reg_sequence.sv(230) @ 365: uvm_test_top.env_h.agt1.seqr@@seq5 [REG_SEQ:[WRITE]] [MEM_ADDR_01]...[POKE]... Desired=0x976d2349, Mirror=0x976d2349 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(238) @ 365: uvm_test_top.env_h.agt1.seqr@@seq5 [REG_SEQ:[READ]] [MEM_ADDR_01]...[PEEK]... Desired=0x976d2349, Mirror=0x976d2349, rdata=0x976d2349 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(241) @ 365: uvm_test_top.env_h.agt1.seqr@@seq5 [REPORT] [MEM_ADDR_REG] MATCH's write and read value...
+# UVM_INFO dma_driver.sv(31) @ 365: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x4e068879 | addr = 0x40c | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 415: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x4e068879 | addr = 0x40c | rdata = 0xc742c1c7
+#  
+# UVM_INFO dma_reg_sequence.sv(255) @ 415: uvm_test_top.env_h.agt1.seqr@@seq5 [REG_SEQ:[WRITE]] [MEM_ADDR_01]...[POKE]... Desired=0x4e068879, Mirror=0x976d2349 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 415: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x40c | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 465: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x4e068879] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 465: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x40c | rdata = 0x4e068879
+#  
+# UVM_INFO dma_reg_sequence.sv(263) @ 465: uvm_test_top.env_h.agt1.seqr@@seq5 [REG_SEQ:[READ]] [MEM_ADDR_01]...[PEEK]... Desired=0x4e068879, Mirror=0x4e068879, rdata=0x4e068879 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(266) @ 465: uvm_test_top.env_h.agt1.seqr@@seq5 [REPORT] [MEM_ADDR_REG] MATCH's write and read value...
+# UVM_INFO dma_reg_sequence.sv(284) @ 465: uvm_test_top.env_h.agt1.seqr@@seq6 [REG_SEQ] STATUS_01 : Starting STATUS register verification
+# UVM_INFO dma_driver.sv(31) @ 465: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x0 | addr = 0x404 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 515: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x0 | addr = 0x404 | rdata = 0x4e068879
+#  
+# UVM_INFO dma_reg_sequence.sv(306) @ 515: uvm_test_top.env_h.agt1.seqr@@seq6 [REG_SEQ:[POKE]] [STATUS_INFO_01] Desired=0x00000001, Mirror=0x00000001 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 515: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0xabcd | addr = 0x414 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 565: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0xabcd | addr = 0x414 | rdata = 0x4e068879
+#  
+# UVM_INFO dma_reg_sequence.sv(315) @ 565: uvm_test_top.env_h.agt1.seqr@@seq6 [REG_SEQ:[WRITE]] [STATUS_INFO_01] Desired=0x00000001, Mirror=0x00000001 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 565: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x414 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 615: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000002] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 615: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x414 | rdata = 0x2
+#  
+# UVM_INFO dma_reg_sequence.sv(324) @ 615: uvm_test_top.env_h.agt1.seqr@@seq6 [REG_SEQ:[READ]] [STATUS_INFO_01] Desired=0x00000002, Mirror=0x00000002, rdata=0x00000002 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(327) @ 615: uvm_test_top.env_h.agt1.seqr@@seq6 [REPORT] [STATUS_REG] MATCH's write & read value as not same [RO].....
+# UVM_INFO dma_reg_sequence.sv(333) @ 615: uvm_test_top.env_h.agt1.seqr@@seq6 [REG_SEQ] STATUS_01 : verification completed
+# UVM_INFO dma_driver.sv(31) @ 615: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x418 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 665: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000001] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 665: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x418 | rdata = 0x1
+#  
+# UVM_INFO dma_reg_sequence.sv(357) @ 665: uvm_test_top.env_h.agt1.seqr@@seq7 [REG_SEQ:[READ]] [TRANSFER_COUNT_01] BEFORE POKE.. Desired=0x00000001, Mirror=0x00000001, rdata=0x00000001 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(366) @ 665: uvm_test_top.env_h.agt1.seqr@@seq7 [REG_SEQ:[POKE]] [TRANSFER_COUNT_01] Desired=0xffffffff, Mirror=0xffffffff [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 665: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0xb0c00fa0 | addr = 0x418 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 715: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0xb0c00fa0 | addr = 0x418 | rdata = 0x1
+#  
+# UVM_INFO dma_reg_sequence.sv(376) @ 715: uvm_test_top.env_h.agt1.seqr@@seq7 [REG_SEQ:[WRITE]] After write.....[TRANSFER_COUNT_01] Desired=0xffffffff, Mirror=0xffffffff [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(385) @ 715: uvm_test_top.env_h.agt1.seqr@@seq7 [REG_SEQ:[PEEK]] [TRANSFER_COUNT_01] Desired=0xffffffff, Mirror=0xffffffff, rdata=0xffffffff [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(388) @ 715: uvm_test_top.env_h.agt1.seqr@@seq7 [REPORT] [TRANSFER_REG] MATCH's write and read value.....
+# UVM_INFO dma_driver.sv(31) @ 715: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x16707717 | addr = 0x410 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 765: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x16707717 | addr = 0x410 | rdata = 0x1
+#  
+# UVM_INFO dma_reg_sequence.sv(410) @ 765: uvm_test_top.env_h.agt1.seqr@@seq8 [REG_SEQ:[WRITE]] [EXTRA_INFO_01] Desired=0x16707717, Mirror=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 765: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x410 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 815: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x16707717] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 815: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x410 | rdata = 0x16707717
+#  
+# UVM_INFO dma_reg_sequence.sv(418) @ 815: uvm_test_top.env_h.agt1.seqr@@seq8 [REG_SEQ:[READ]] [EXTRA_INFO_01] Desired=0x16707717, Mirror=0x16707717, rdata=0x16707717 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(421) @ 815: uvm_test_top.env_h.agt1.seqr@@seq8 [REPORT] [TRANSFER_REG] MATCH's write and read value.....
+# UVM_INFO dma_driver.sv(31) @ 815: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x17edc4ae | addr = 0x41c | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 865: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x17edc4ae | addr = 0x41c | rdata = 0x16707717
+#  
+# UVM_INFO dma_reg_sequence.sv(440) @ 865: uvm_test_top.env_h.agt1.seqr@@seq9 [REG_SEQ:[WRITE]] [DESCRIPTOR_ADDR_01] Desired=0x17edc4ae, Mirror=0x00000000, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 865: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x41c | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 915: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x17edc4ae] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 915: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x41c | rdata = 0x17edc4ae
+#  
+# UVM_INFO dma_reg_sequence.sv(448) @ 915: uvm_test_top.env_h.agt1.seqr@@seq9 [REG_SEQ:[READ]] [DESCRIPTOR_ADDR_01] Desired=0x17edc4ae, Mirror=0x17edc4ae, rdata=0x17edc4ae [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(451) @ 915: uvm_test_top.env_h.agt1.seqr@@seq9 [REPORT] [DESCRIPTOR_ADDR_REG] MATCH's write and read value.....
+# UVM_INFO dma_driver.sv(31) @ 915: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x420 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 965: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000000] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 965: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x420 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(473) @ 965: uvm_test_top.env_h.agt1.seqr@@seq10 [REG_SEQ:[READ]] [ERROR_STATUS_01]Before POKE... Desired=0x00000000, Mirror=0x00000000, rdata=0x0 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(483) @ 965: uvm_test_top.env_h.agt1.seqr@@seq10 [REG_SEQ:[POKE]] [ERROR_STATUS_01] Desired=0x0000001f, Mirror=0x0000001f, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(492) @ 965: uvm_test_top.env_h.agt1.seqr@@seq10 [REG_SEQ:[PEEK]] [ERROR_STATUS_01] Desired=0x0000001e, Mirror=0x0000001e, rdata=0x0000001e [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(501) @ 965: uvm_test_top.env_h.agt1.seqr@@seq10 [REG_SEQ:[WRITE]] [ERROR_STATUS_01] Desired=0x00000000, Mirror=0x00000000[status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 965: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x420 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1015: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000000] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1015: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x420 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(509) @ 1015: uvm_test_top.env_h.agt1.seqr@@seq10 [REG_SEQ:[READ]] [ERROR_STATUS_01] Desired=0x00000000, Mirror=0x00000000, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(512) @ 1015: uvm_test_top.env_h.agt1.seqr@@seq10 [REPORT] [ERROR_STATUS_REG] MATCH's read value as Zero.....[W1C]
+# UVM_INFO dma_driver.sv(31) @ 1015: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 1065: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(540) @ 1065: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[WRITE]] [CONFIGURE_01] Desired=0x00000000, Mirror=0x00000000, Priority=0 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 1065: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1115: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000000] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1115: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(548) @ 1115: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[READ]] [CONFIGURE_01] Desired=0x00000000, Mirror=0x00000000, Priority=0, rdata=0x00000000 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(550) @ 1115: uvm_test_top.env_h.agt1.seqr@@seq11 [REPORT] [CONFIG_REG] MATCH's prio and read value.....
+# UVM_INFO dma_driver.sv(31) @ 1115: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x1 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 1165: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x1 | addr = 0x424 | rdata = 0x0
+#  
+# UVM_INFO dma_reg_sequence.sv(540) @ 1165: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[WRITE]] [CONFIGURE_01] Desired=0x00000001, Mirror=0x00000000, Priority=1 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 1165: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1215: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000001] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1215: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x1
+#  
+# UVM_INFO dma_reg_sequence.sv(548) @ 1215: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[READ]] [CONFIGURE_01] Desired=0x00000001, Mirror=0x00000001, Priority=1, rdata=0x00000001 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(550) @ 1215: uvm_test_top.env_h.agt1.seqr@@seq11 [REPORT] [CONFIG_REG] MATCH's prio and read value.....
+# UVM_INFO dma_driver.sv(31) @ 1215: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x2 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 1265: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x2 | addr = 0x424 | rdata = 0x1
+#  
+# UVM_INFO dma_reg_sequence.sv(540) @ 1265: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[WRITE]] [CONFIGURE_01] Desired=0x00000002, Mirror=0x00000001, Priority=2 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 1265: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1315: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000002] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1315: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x2
+#  
+# UVM_INFO dma_reg_sequence.sv(548) @ 1315: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[READ]] [CONFIGURE_01] Desired=0x00000002, Mirror=0x00000002, Priority=2, rdata=0x00000002 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(550) @ 1315: uvm_test_top.env_h.agt1.seqr@@seq11 [REPORT] [CONFIG_REG] MATCH's prio and read value.....
+# UVM_INFO dma_driver.sv(31) @ 1315: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x3 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 1365: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x3 | addr = 0x424 | rdata = 0x2
+#  
+# UVM_INFO dma_reg_sequence.sv(540) @ 1365: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[WRITE]] [CONFIGURE_01] Desired=0x00000003, Mirror=0x00000002, Priority=3 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 1365: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1415: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000003] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1415: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x3
+#  
+# UVM_INFO dma_reg_sequence.sv(548) @ 1415: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[READ]] [CONFIGURE_01] Desired=0x00000003, Mirror=0x00000003, Priority=3, rdata=0x00000003 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(550) @ 1415: uvm_test_top.env_h.agt1.seqr@@seq11 [REPORT] [CONFIG_REG] MATCH's prio and read value.....
+# UVM_INFO dma_driver.sv(31) @ 1415: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 1 | rd_en = 0 | wdata = 0x3 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_monitor.sv(29) @ 1465: uvm_test_top.env_h.agt1.mon [MON] wr_en = 1 | rd_en = 0 | wdata = 0x3 | addr = 0x424 | rdata = 0x3
+#  
+# UVM_INFO dma_reg_sequence.sv(564) @ 1465: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[WRITE]] [CONFIGURE_01] Desired=0x00000003, Mirror=0x00000003 [status : UVM_IS_OK]
+# UVM_INFO dma_driver.sv(31) @ 1465: uvm_test_top.env_h.agt1.drv [DRV] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x0
+# UVM_INFO dma_driver.sv(35) @ 1515: uvm_test_top.env_h.agt1.drv [DRV] REQ in drv is updated to send rdata[0x00000003] to read @(reg_model)
+# UVM_INFO dma_monitor.sv(29) @ 1515: uvm_test_top.env_h.agt1.mon [MON] wr_en = 0 | rd_en = 1 | wdata = 0x0 | addr = 0x424 | rdata = 0x3
+#  
+# UVM_INFO dma_reg_sequence.sv(572) @ 1515: uvm_test_top.env_h.agt1.seqr@@seq11 [REG_SEQ:[READ]] [CONFIGURE_01] Desired=0x00000003, Mirror=0x00000003, rdata=0x00000003 [status : UVM_IS_OK]
+# UVM_INFO dma_reg_sequence.sv(574) @ 1515: uvm_test_top.env_h.agt1.seqr@@seq11 [REPORT] [CONFIG_REG] MATCH's write and read value.....
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1515: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  141
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [CTRL_01]     1
+# [DRV]    46
+# [MON]    30
+# [Questa UVM]     2
+# [REG_SEQ]     2
+# [REG_SEQ:[PEEK]]     2
+# [REG_SEQ:[POKE]]     3
+# [REG_SEQ:[READ AFTER RESET]]     1
+# [REG_SEQ:[READ]]    18
+# [REG_SEQ:[WRITE]]    17
+# [REPORT]    17
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1515 ns  Iteration: 61  Instance: /top
+# Saving coverage database on exit...
+# End time: 23:12:19 on Jan 27,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

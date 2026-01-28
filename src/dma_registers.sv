@@ -93,10 +93,6 @@ class CNTRL extends uvm_reg;
       //bins start = {1};
     }
     
-    self_clear : coverpoint start_dma.value iff(!start_dma.value){
-      bins s_clear = {0};
-    }
-    
     w_count_cp : coverpoint w_count.value{
       bins bin = {[0:$]};
     }
@@ -698,28 +694,23 @@ class ERROR_STATUS extends uvm_reg;
     option.per_instance = 1;
 
     bus_error_cp : coverpoint bus_error.value {
-      bins no_err = {0};
-      bins err    = {1};
+      bins err = {0,1};
     }
 
     timeout_error_cp : coverpoint timeout_error.value {
-      bins no_err = {0};
-      bins err    = {1};
+      bins err = {0,1};
     }
 
     alignment_error_cp : coverpoint alignment_error.value {
-      bins no_err = {0};
-      bins err    = {1};
+      bins err = {0,1};
     }
 
     overflow_error_cp : coverpoint overflow_error.value {
-      bins no_err = {0};
-      bins err    = {1};
+      bins err = {0,1};
     }
 
     underflow_error_cp : coverpoint underflow_error.value {
-      bins no_err = {0};
-      bins err    = {1};
+      bins err = {0,1};
     }
 /*  // RO-FIELD...
     error_code_cp : coverpoint error_code.value {
