@@ -2,13 +2,13 @@
 <img width="1164" height="522" alt="DMA_RAL_ARCHITECTURE drawio" src="https://github.com/user-attachments/assets/e68f3893-6a41-4ee5-8468-29a088cf34c5" />
 DMA registers are verified here with UVM_RAL model
 
-============================================================================
+===========================================================================
 #  RUN_COMMANDS:
 `vlog -sv +acc top.sv`\
 `vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=intr_01_test`\
 `vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_LOW +UVM_TESTNAME=ctrl_01_test`
 
-============================================================================
+===========================================================================
  # SEQUENCE AND TEST'S WRITTEN FOR EACH REGISTER
  dma_test_base<br>
        ├── intr_01_test    → intr_01_reset_write_read_seq<br>
