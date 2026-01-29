@@ -4,9 +4,9 @@ DMA registers are verified here with UVM_RAL model
 
 ===========================================================================================
 #  RUN_COMMANDS:
-`vlog -sv +acc top.sv`\n
-`vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=intr_01_test`\n
-`vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_LOW +UVM_TESTNAME=ctrl_01_test`\n
+`vlog -sv +acc top.sv`\
+`vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=intr_01_test`\
+`vsim -c -voptargs=+acc=npr top +UVM_VERBOSITY=UVM_LOW +UVM_TESTNAME=ctrl_01_test`\
 
 ===========================================================================================
  # SEQUENCE AND TEST'S WRITTEN FOR EACH REGISTER
