@@ -16,7 +16,7 @@ DMA registers are verified here with UVM_RAL model
        ├── ctrl_01_test    → ctrl_01_start_dma_seq<br> 
        ├── ioa_01_test     → ioa_01_rw_seq<br>
        ├── mem_01_test     → mem_01_rw_seq<br>
-       ├── sta_01_test     → status_01_busy_seq 
+       ├── sta_01_test     → status_01_busy_seq<br>
        ├── tran_01_test    → transfer_01_ro_seq<br>
        ├── ext_01_test     → ext_01_rw_seq<br>
        ├── desc_01_test    → desc_01_rw_seq<br>
